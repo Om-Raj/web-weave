@@ -64,7 +64,7 @@ export const codeAgentFunction = inngest.createFunction(
           },
         }),
         createTool({
-          name: "createOrUpdateFile",
+          name: "createOrUpdateFiles",
           description: "Create or update files in the sandbox",
           parameters: z.object({
             files: z.array(
@@ -78,7 +78,7 @@ export const codeAgentFunction = inngest.createFunction(
             { files },
             { step, network }: Tool.Options<AgentState>,
           ) => {
-            const newFiles = await step?.run("createOrUpdateFile", async () => {
+            const newFiles = await step?.run("createOrUpdateFiles", async () => {
               try {
                 const updatedFiles = network.state.data.files || {};
                 const sandbox = await getSandbox(sandboxId);

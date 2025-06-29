@@ -128,7 +128,7 @@ export const FileExplorer = ({ files }: FileExplorerProps) => {
 
   return (
     <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel defaultSize={30} minSize={30} className="bg-sidebar">
+      <ResizablePanel defaultSize={25} minSize={20} className="bg-sidebar">
         <TreeView
           data={treeData}
           value={selectedFile}
@@ -136,7 +136,7 @@ export const FileExplorer = ({ files }: FileExplorerProps) => {
         />
       </ResizablePanel>
       <ResizableHandle className="hover:bg-primary transition-colors" />
-      <ResizablePanel defaultSize={70} minSize={40}>
+      <ResizablePanel defaultSize={75} minSize={40}>
         {!!selectedFile && files[selectedFile] ? (
           <div className="h-full w-full flex flex-col">
             <div className="border-b bg-sidebar px-4 py-2 flex justify-between items-center gap-x-2">
