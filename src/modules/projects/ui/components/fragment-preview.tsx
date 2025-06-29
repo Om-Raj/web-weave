@@ -28,12 +28,12 @@ export const FragmentPreview = ({ fragment }: Props) => {
   return (
     <div className="flex flex-col w-full h-full">
       <div className="flex items-center p-2 border-b bg-sidebar gap-x-2">
-        <Hint text="Refresh" align="start">
+        <Hint text="Refresh" side="bottom" align="start">
           <Button size="sm" variant="outline" onClick={onRefresh}>
             <RefreshCcwIcon />
           </Button>
         </Hint>
-        <Hint text="Click to copy">
+        <Hint text="Click to copy" side="bottom">
           <Button
             size="sm"
             variant="outline"
@@ -44,7 +44,7 @@ export const FragmentPreview = ({ fragment }: Props) => {
             <span className="truncate">{fragment.sandboxUrl}</span>
           </Button>
         </Hint>
-        <Hint text="Open in a new tab" align="end">
+        <Hint text="Open in a new tab" side="bottom" align="end">
           <Button
             size="sm"
             variant="outline"
