@@ -1,17 +1,17 @@
 # This is a config for E2B sandbox template.
-# You can use template ID (19yfif5g41gk0gvjcxp9) or template name (web-weave-test-2) to create a sandbox:
+# You can use template ID (19yfif5g41gk0gvjcxp9) or template name (web-weave-prod-1) to create a sandbox:
 
 # Python SDK
 # from e2b import Sandbox, AsyncSandbox
-# sandbox = Sandbox("web-weave-test-2") # Sync sandbox
-# sandbox = await AsyncSandbox.create("web-weave-test-2") # Async sandbox
+# sandbox = Sandbox("web-weave-prod-1") # Sync sandbox
+# sandbox = await AsyncSandbox.create("web-weave-prod-1") # Async sandbox
 
 # JS SDK
 # import { Sandbox } from 'e2b'
-# const sandbox = await Sandbox.create('web-weave-test-2')
+# const sandbox = await Sandbox.create('web-weave-prod-1')
 
 team_id = "d1ccd07f-dfdd-4737-9a86-099aeff2aeb9"
 start_cmd = "/compile_page.sh"
 dockerfile = "e2b.Dockerfile"
-template_name = "web-weave-test-2"
+template_name = "web-weave-prod-1"
 template_id = "19yfif5g41gk0gvjcxp9"
