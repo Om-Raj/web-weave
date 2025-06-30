@@ -21,7 +21,7 @@ const Page = () => {
         </div>
         <h1 className="text-xl md:text-3xl font-bold text-center">Pricing</h1>
         <p className="text-muted-foreground text-center text-sm md:text-base">
-          Choose the plan that's right for you.
+          Choose the plan that&apos;s right for you.
         </p>
           <PricingTable 
             appearance={{
