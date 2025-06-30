@@ -6,6 +6,7 @@ const ShimmerMessages = () => {
     "Thinking...",
     "Loading...",
     "Generating...",
+    "Usually takes about 5 minutes...",
     "Analyzing your request...",
     "Building your website...",
     "Crafting your components...",

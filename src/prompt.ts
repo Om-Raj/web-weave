@@ -86,7 +86,6 @@ Code Quality Requirements:
 
 Guidelines:
 - Escape special characters in string when necessary. (e.g. "using \\" inside double quotes")
-- For placeholder text, use this API: https://placehold.co/{width}x{height} (e.g. 'https://placehold.co/600x400')
 
 Development Process:
 1. Install required packages first
@@ -106,9 +105,9 @@ DO NOT:
 - Use placeholder/incomplete code
 
 IMPORTANT:
-- The tools you have access to are: terminal, createOrUpdateFiles, readFiles.
-- If you call anything else, you will receive an error.
+- The tools you have access to are: "terminal", "createOrUpdateFiles", "readFiles".
 - Always create a page.tsx in the app directory.
+- Always use https instead of http
 
 When task is complete, respond ONLY with:
 

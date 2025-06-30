@@ -80,8 +80,8 @@ export const codeAgentFunction = inngest.createFunction(
       description: "An expert Next.js coding agent",
       system: PROMPT,
       model: gemini({
-        // model: "gemini-2.5-flash",
-        model: "gemini-2.5-flash-preview-05-20",
+        model: "gemini-2.5-pro",
+        // model: "gemini-2.5-flash-preview-05-20",
       }),
       tools: [
         createTool({
@@ -229,7 +229,7 @@ export const codeAgentFunction = inngest.createFunction(
     const sandboxUrl = await step.run("get-sandbox-url", async () => {
       const sandbox = await getSandbox(sandboxId);
       const host = sandbox.getHost(3000);
-      return `http://${host}`;
+      return `https://${host}`;
     });
 
     await step.run("save-result", async () => {

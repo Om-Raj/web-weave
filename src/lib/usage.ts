@@ -3,8 +3,8 @@ import { prisma } from "@/lib/db";
 import { auth } from "@clerk/nextjs/server";
 
 
-const FREE_POINTS = 2;
-const PRO_POINTS = 100;
+const FREE_POINTS = 3;
+const PRO_POINTS = 50;
 const DURATION = 30 * 24 * 60 * 60
 const GENERATION_COST = 1;
 
